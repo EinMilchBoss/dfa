@@ -27,7 +27,11 @@ class DeterministicFiniteAutomaton private constructor(
 
     override fun toString(): String =
         listOf(
-            "states=$states", "symbols=$symbols", "transitions=$transitions", "start=$start", "finalizers=$finalizers"
+            "states=$states",
+            "symbols=$symbols",
+            "transitions=$transitions",
+            "start=$start",
+            "finalizers=$finalizers"
         ).joinToString(", ", prefix = "DeterministicFiniteAutomaton(", postfix = ")")
 
     fun isWord(word: String): Boolean =
